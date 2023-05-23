@@ -37,6 +37,7 @@ then
     echo "Скрипт успешно прошел первый тест!"
 else
     echo "Тест провален :("
+    echo "count is $count"
     rm input123456
     rm output123456
     exit 1
