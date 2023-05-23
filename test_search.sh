@@ -28,6 +28,10 @@ echo "Маша Элина
 Игнат" > input123456
 
 ./search_word.sh Элина <<< "input123456 output123456"
+echo "showing file input123456"
+cat input123456
+echo "showing file output123456"
+cat output123456
 
 first_line=$(head -n 1 output123456)
 echo "first line: $first_Line"
