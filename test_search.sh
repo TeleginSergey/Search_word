@@ -30,6 +30,7 @@ echo "Маша Элина
 ./search_word.sh Элина <<< "input123456 output123456"
 
 first_line=$(head -n 1 output123456)
+echo "first line: $first_Line"
 count=${first_line:54:1}
 
 if [[ $count -eq 4 ]]
