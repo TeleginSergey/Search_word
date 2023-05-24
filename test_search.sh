@@ -34,8 +34,6 @@ echo "showing file output123456"
 cat output123456
 
 first_line=$(head -n 1 output123456)
-echo "first line: $first_line"
-echo "Length of first line: ${#first_line}"
 count=${first_line:55:1}
 
 if [[ $count -eq 4 ]]
@@ -43,7 +41,6 @@ then
     echo "Скрипт успешно прошел первый тест!"
 else
     echo "Тест провален :("
-    echo "count is $count"
     rm input123456
     rm output123456
     exit 1
@@ -81,7 +78,7 @@ echo "Маша Элина
 ./search_word.sh Элина <<< "input123456 output123456"
 
 first_line=$(head -n 1 output123456)
-count=${first_line:54:1}
+count=${first_line:55:1}
 
 if [[ $count -eq 4 ]]
 then
