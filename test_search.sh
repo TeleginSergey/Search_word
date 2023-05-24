@@ -34,7 +34,7 @@ echo "showing file output123456"
 cat output123456
 
 first_line=$(head -n 1 output123456)
-echo "first line: $first_Line"
+echo "first line: $first_line"
 count=${first_line:54:1}
 
 if [[ $count -eq 4 ]]
